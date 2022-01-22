@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar vuejs</title>
+</head>
+<body>
+    <div id="app">
+
+        <!-- data -->
+        <h1>{{ name }}</h1>
+        <p>{{ message }}</p>
+        <p>{{ 1+1 }}</p>
+
+        <!-- methods pakai kurung -->
+        <p>{{ getName ()}}</p> 
+
+        <!-- computed property -->
+        <p>{{ namaLengkap }}</p>
+        <p>{{ bilangan }}</p>
+        <p>Bilangan diatas adalah {{ infoBilangan }}</p>
+
+        <!-- directive binding -->
+        <h1 v-text="name.toUpperCase()"></h1>
+
+        <!-- atribute binding -->
+        <img v-bind:src="gambar" width="200">
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="script.js"></script>
+</body>
+</html>
