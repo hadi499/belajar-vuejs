@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>belajar vuejs</title>
+    <style>
+        .active {
+            background: salmon;
+            margin: 0;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
 
         <!-- data -->
         <h1>{{ name }}</h1>
+        
         <p>{{ message }}</p>
         <p>{{ 1+1 }}</p>
 
@@ -27,6 +35,27 @@
 
         <!-- atribute binding -->
         <img v-bind:src="gambar" width="200">
+
+        <!-- event -->
+        <h2>{{ bilangan }}</h2>
+        <button v-on:click="bilangan++">decrement</button>
+        <br>
+        <br>
+        <br>
+        <button v-bind:class="{ active : menu === 'home' }" v-on:click="menu = 'home'">Home</button>
+        <button v-bind:class="{ active : menu === 'about' }" v-on:click="menu = 'about'">About</button>
+        <button v-bind:class="{ active : menu === 'blog' }" v-on:click="menu = 'blog'">Blog</button>
+        <br>
+        <br>
+        <input type="text" v-model="name">
+        <br>
+        <p>{{kelas}}</p>
+        <div>
+            <label><input type="checkbox" value="React" v-model="kelas">React</label>
+            <label><input type="checkbox" value="Vuejs" v-model="kelas">Vuejs</label>
+            <label><input type="checkbox" value="Angular" v-model="kelas">Angular</label>
+        </div>
+
 
     </div>
     

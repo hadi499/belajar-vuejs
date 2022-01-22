@@ -5,7 +5,9 @@ const member = {
     namaDepan: 'Hadi',
     namaBelakang: 'Purnomo',
     bilangan: 4,
-    gambar: 'image/lee.png'
+    gambar: 'image/lee.png',
+    menu: 'home',
+    kelas: []
 }
 
 const vm = new Vue({
