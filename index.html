@@ -55,6 +55,18 @@
             <label><input type="checkbox" value="Vuejs" v-model="kelas">Vuejs</label>
             <label><input type="checkbox" value="Angular" v-model="kelas">Angular</label>
         </div>
+        <div>
+            <h2>Perulangan</h2>
+            <ul>
+                <li v-for="b in buah">{{ b }}</li>
+            </ul>
+            <ul>
+                <li v-for="(item, index) of program">{{ index+1 }} - {{ item }}</li>
+            </ul>
+            <ul>
+                <li v-for="x in 5">{{ x }}</li>
+            </ul>
+        </div>
 
 
     </div>

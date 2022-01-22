@@ -7,7 +7,9 @@ const member = {
     bilangan: 4,
     gambar: 'image/lee.png',
     menu: 'home',
-    kelas: []
+    kelas: [],
+    buah: ['Manggis', 'Durian', 'Kelapa'],
+    program: ['Golang', 'PHP', 'Javascript']
 }
 
 const vm = new Vue({
